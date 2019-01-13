@@ -80,11 +80,12 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Choose My Path
 
-                </div>
-                <img src="{{ asset('img/icon_logo.png') }}" alt="Choose My Path Logo" width="30%" height="auto">
+                <p><img src="{{ asset('img/choose_logo.png') }}" alt="Choose My Path Logo" width="70%" height="auto"></p>
+
+                <h1>Write your own "choose my path" story, using video clips. </h1>
+                <br>
+                <p>Web application developed by Sunny Tree Software</p>
             </div>
         </div>
     </body>
