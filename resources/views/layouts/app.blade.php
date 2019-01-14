@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/sticky-footer.css') }}">
 </head>
 <body>
     <div id="app">
@@ -76,5 +77,6 @@
             @yield('content')
         </main>
     </div>
+@include('includes.footer')
 </body>
 </html>

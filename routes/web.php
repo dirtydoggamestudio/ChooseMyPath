@@ -12,9 +12,23 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('stories', 'StoryController', ['names'=>[
+    'index'=>'stories.index',
+    'create'=>'stories.create',
+    'store'=>'stories.store',
+    'edit'=>'stories.edit',
+]])->middleware('auth');
+
+Route::resource('pages', 'PageController', ['names'=>[
+    'index'=>'pages.index',
+    'create'=>'pages.create',
+    'store'=>'pages.store',
+    'edit'=>'pages.edit',
+]])->middleware('auth');
